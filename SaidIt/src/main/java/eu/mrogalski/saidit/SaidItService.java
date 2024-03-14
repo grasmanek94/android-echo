@@ -17,7 +17,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.SystemClock;
-import android.support.v4.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 import android.text.format.DateUtils;
 import android.util.Log;
 import android.widget.Toast;

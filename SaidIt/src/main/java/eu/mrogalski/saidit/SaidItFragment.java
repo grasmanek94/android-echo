@@ -17,8 +17,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.view.ViewCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.view.ViewCompat;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -401,10 +401,12 @@ public class SaidItFragment extends Fragment {
         }
 
         float getPrependedSeconds(View button) {
-            switch (button.getId()) {
-                case R.id.record_last_minute: return 60;
-                case R.id.record_last_5_minutes: return 60 * 5;
-                case R.id.record_last_max: return 60 * 60 * 24 * 365;
+            if(button.getId() == R.id.record_last_minute) {
+                return 60;
+            } else if(button.getId() == R.id.record_last_5_minutes) {
+                return 60 * 5;
+            } else if (button.getId() == R.id.record_last_max) {
+                return 60 * 60 * 24 * 365;
             }
             return 0;
         }

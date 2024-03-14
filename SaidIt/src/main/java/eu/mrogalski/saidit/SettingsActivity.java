@@ -13,6 +13,7 @@ import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaCodecInfo;
 import android.media.MediaCodecList;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -23,6 +24,8 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
 
 import eu.mrogalski.StringFormat;
 import eu.mrogalski.android.TimeFormat;
@@ -168,6 +171,7 @@ public class SettingsActivity extends Activity {
         setContentView(myFrameLayout);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     private void debugPrintCodecs() {
         final int codecCount = MediaCodecList.getCodecCount();
         for(int i = 0; i < codecCount; ++i) {
@@ -228,10 +232,12 @@ public class SettingsActivity extends Activity {
         }
 
         private int getMultiplier(View button) {
-            switch (button.getId()) {
-                case R.id.memory_high: return 3;
-                case R.id.memory_medium: return 2;
-                case R.id.memory_low: return 1;
+            if(button.getId() == R.id.memory_high) {
+                return 3;
+            } else if(button.getId() == R.id.memory_medium) {
+                return 2;
+            } else if(button.getId() ==  R.id.memory_low) {
+                return 1;
             }
             return 0;
         }
