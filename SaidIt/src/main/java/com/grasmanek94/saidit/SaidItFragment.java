@@ -62,9 +62,6 @@ public class SaidItFragment extends Fragment {
     private TextView rec_indicator;
     private TextView rec_time;
 
-    private ImageButton rate_on_google_play;
-    private ImageView heart;
-
     @Override
     public void onStart() {
         super.onStart();
@@ -202,43 +199,6 @@ public class SaidItFragment extends Fragment {
         rec_section = (LinearLayout) rootView.findViewById(R.id.rec_section);
         rec_indicator = (TextView) rootView.findViewById(R.id.rec_indicator);
         rec_time = (TextView) rootView.findViewById(R.id.rec_time);
-
-        rate_on_google_play = (ImageButton) rootView.findViewById(R.id.rate_on_google_play);
-
-        final Animation pulse = AnimationUtils.loadAnimation(activity, R.anim.pulse);
-        heart = (ImageView) rootView.findViewById(R.id.heart);
-        heart.startAnimation(pulse);
-
-        rate_on_google_play.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + activity.getPackageName())));
-            }
-        });
-
-        heart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                heart.animate().scaleX(10).scaleY(10).alpha(0).setDuration(2000).start();
-                Handler handler = new Handler(activity.getMainLooper());
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + activity.getPackageName())));
-                    }
-                }, 1000);
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        heart.setAlpha(0f);
-                        heart.setScaleX(1);
-                        heart.setScaleY(1);
-                        heart.animate().alpha(1).start();
-
-                    }
-                }, 3000);
-            }
-        });
 
         rootView.findViewById(R.id.settings_button).setOnClickListener(new View.OnClickListener() {
             @Override

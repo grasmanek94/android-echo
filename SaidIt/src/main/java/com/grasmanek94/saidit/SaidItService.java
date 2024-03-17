@@ -203,7 +203,7 @@ public class SaidItService extends Service {
                 long millis  = System.currentTimeMillis() - 1000 * useBytes / FILL_RATE;
                 final int flags = DateUtils.FORMAT_SHOW_TIME | DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE;
                 final String dateTime = DateUtils.formatDateTime(SaidItService.this, millis, flags);
-                String filename = "Echo - " + dateTime + ".wav";
+                String filename = "Echo-G - " + dateTime + ".wav";
 
                 final String storagePath = Environment.getExternalStorageDirectory().getAbsolutePath();
                 String path = storagePath + "/" + filename;
@@ -284,7 +284,7 @@ public class SaidItService extends Service {
                 long millis  = System.currentTimeMillis() - 1000 * useBytes / FILL_RATE;
                 final int flags = DateUtils.FORMAT_SHOW_TIME | DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE;
                 final String dateTime = DateUtils.formatDateTime(SaidItService.this, millis, flags);
-                String filename = "Echo - " + dateTime + ".wav";
+                String filename = "Echo-G - " + dateTime + ".wav";
 
                 final String storagePath = Environment.getExternalStorageDirectory().getAbsolutePath();
                 String path = storagePath + "/" + filename;
