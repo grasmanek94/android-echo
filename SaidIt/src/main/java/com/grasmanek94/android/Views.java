@@ -1,4 +1,4 @@
-package eu.mrogalski.android;
+package com.grasmanek94.android;
 
 import android.view.View;
 import android.view.ViewGroup;

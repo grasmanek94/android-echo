@@ -1,4 +1,4 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 public final class IntentResult {
 
     private final String contents;

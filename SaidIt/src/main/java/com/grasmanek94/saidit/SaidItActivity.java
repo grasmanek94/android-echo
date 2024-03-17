@@ -1,7 +1,6 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 
 import android.app.Activity;
-import android.net.Uri;
 import android.os.Bundle;
 
 public class SaidItActivity extends Activity {

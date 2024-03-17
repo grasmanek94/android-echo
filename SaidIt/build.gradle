@@ -11,12 +11,12 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    namespace 'eu.mrogalski.saidit'
+    namespace 'com.grasmanek94.saidit'
     compileSdkVersion 34
     buildToolsVersion "34"
 
     defaultConfig {
-        applicationId "eu.mrogalski.saidit"
+        applicationId "com.grasmanek94.saidit"
         minSdkVersion 21
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 21

@@ -1,4 +1,4 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 
 import android.content.Context;
 import android.content.Intent;

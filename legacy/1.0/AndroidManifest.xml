@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="eu.mrogalski.saidit"
+    package="com.grasmanek94.saidit"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -19,7 +19,7 @@
         android:largeHeap="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="eu.mrogalski.saidit.BackgroundRecorderActivity"
+            android:name="com.grasmanek94.saidit.BackgroundRecorderActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,12 +29,12 @@
         </activity>
 
         <service
-            android:name="eu.mrogalski.saidit.SaidItService"
+            android:name="com.grasmanek94.saidit.SaidItService"
             android:enabled="true"
             android:exported="true" >
         </service>
 
-        <receiver android:name="eu.mrogalski.saidit.BroadcastReceiver" >
+        <receiver android:name="com.grasmanek94.saidit.BroadcastReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>

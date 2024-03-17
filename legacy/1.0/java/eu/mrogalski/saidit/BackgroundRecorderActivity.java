@@ -1,4 +1,4 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;

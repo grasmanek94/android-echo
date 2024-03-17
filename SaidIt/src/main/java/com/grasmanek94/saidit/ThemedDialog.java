@@ -1,4 +1,4 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -13,7 +13,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
-import eu.mrogalski.android.Views;
+import com.grasmanek94.android.Views;
 
 public class ThemedDialog extends DialogFragment {
     static final String TAG = ThemedDialog.class.getName();

@@ -1,4 +1,4 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -27,9 +27,9 @@ import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
-import eu.mrogalski.StringFormat;
-import eu.mrogalski.android.TimeFormat;
-import eu.mrogalski.android.Views;
+import com.grasmanek94.StringFormat;
+import com.grasmanek94.android.TimeFormat;
+import com.grasmanek94.android.Views;
 
 public class SettingsActivity extends Activity {
     static final String TAG = SettingsActivity.class.getSimpleName();

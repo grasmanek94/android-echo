@@ -1,4 +1,4 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 
 import android.app.AlarmManager;
 import android.app.Notification;
@@ -27,7 +27,7 @@ import java.io.IOException;
 
 import simplesound.pcm.WavAudioFormat;
 import simplesound.pcm.WavFileWriter;
-import static eu.mrogalski.saidit.SaidIt.*;
+import static com.grasmanek94.saidit.SaidIt.*;
 
 public class SaidItService extends Service {
     static final String TAG = SaidItService.class.getSimpleName();

@@ -1,4 +1,4 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,8 +13,8 @@ import android.widget.TextView;
 import java.io.File;
 import java.net.URLConnection;
 
-import eu.mrogalski.StringFormat;
-import eu.mrogalski.android.TimeFormat;
+import com.grasmanek94.StringFormat;
+import com.grasmanek94.android.TimeFormat;
 
 public class RecordingDoneDialog extends ThemedDialog {
 

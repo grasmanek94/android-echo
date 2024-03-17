@@ -7,7 +7,7 @@ It is free/libre and gratis software.
 Download
 ---
 
-* [F-Droid](https://f-droid.org/repository/browse/?fdid=eu.mrogalski.saidit)
+* [F-Droid](https://f-droid.org/repository/browse/?fdid=com.grasmanek94.saidit)
 
 Building
 ---

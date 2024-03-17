@@ -1,8 +1,8 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 
 public class SaidIt {
 
-    static final String PACKAGE_NAME = "eu.mrogalski.saidit";
+    static final String PACKAGE_NAME = "com.grasmanek94.saidit";
     static final String AUDIO_MEMORY_ENABLED_KEY = "audio_memory_enabled";
     static final String AUDIO_MEMORY_SIZE_KEY = "audio_memory_size";
     static final String SAMPLE_RATE_KEY = "sample_rate";

@@ -1,4 +1,4 @@
-package eu.mrogalski;
+package com.grasmanek94;
 
 import java.text.DecimalFormat;
 

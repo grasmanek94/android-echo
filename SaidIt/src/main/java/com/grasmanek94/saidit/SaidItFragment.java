@@ -1,4 +1,4 @@
-package eu.mrogalski.saidit;
+package com.grasmanek94.saidit;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -33,8 +33,8 @@ import android.widget.TextView;
 
 import java.io.File;
 
-import eu.mrogalski.android.TimeFormat;
-import eu.mrogalski.android.Views;
+import com.grasmanek94.android.TimeFormat;
+import com.grasmanek94.android.Views;
 
 public class SaidItFragment extends Fragment {
 
